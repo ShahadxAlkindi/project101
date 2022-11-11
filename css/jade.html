@@ -2,17 +2,19 @@
  <html lang="en">
   <head>
   <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jade</title>
-  <link rel = "stylesheet" type = "text/css"
-         href = "nav.css">
+
+  <link rel = "stylesheet" type = "text/css" href = "nav.css">
+<link rel = "stylesheet" type = "text/css" href = "slideshow.css">
   <style type = "text/css">
+
   html, body {width: 100%; height:100%; margin:0; padding:0; overflow-x:hidden;}
   body {background-color: #fcddbf;
   font-family: Baskerville-Old-Face;}
   footer {background-color: #b3836c;}
   p.border {border-style: solid; border-color: #7c5a51;  padding:20px;}
   p {font-family: Baskerville-Old-Face;}
-
 
   </style>
 </head>
@@ -57,31 +59,61 @@
   <!--</section>--></p>
 <br>
   <p>
-  <br><h3 style="text-align:center; padding-top:50px;">
+  <br><h2 style="text-align:center; padding-top:50px;">
   Gallery
-  </h3>
-  <img src ="first.jpg" width = "100" height = "80" alt="">
-  <img src ="second.jpg" width = "100" height = "80" alt="">
-  <img src ="third.jpg" width = "100" height = "80" alt="">
-  <img src ="fourth.jpg" width = "100" height = "80" alt="">
-  <img src ="fifth.jpg" width = "100" height = "80" alt="">
-  <img src ="sixth.jpg" width = "100" height = "80" alt="">
-  <img src ="seventh.jpg" width = "100" height = "80" alt="">
-  <img src ="eighth.jpg" width = "100" height = "80" alt="">
-  <img src ="ninth.jpg" width = "100" height = "80" alt="">
-  <img src ="tenth.jpg" width = "100" height = "80" alt="">
-  <img src ="eleven.jpg" width = "100" height = "80" alt="">
-  <img src ="twelve.jpg" width = "100" height = "80" alt="">
+  </h2>
+ <div class="slideshow-container">
 
+ <div class="mySlides fade">
+   <div class="numbertext">1 / 6</div>
+   <img src="first.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides fade">
+   <div class="numbertext">2 / 6</div>
+   <img src="fourth.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides fade">
+   <div class="numbertext">3 / 6</div>
+   <img src="eighth.jpg" style="width:100%">
+ </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="fifth.jpg" style="width:100%">
+ </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="sixth.jpg" style="width:100%">
+ </div>
+   <div class="mySlides fade">
+     <div class="numbertext">6 / 6</div>
+     <img src="eleven.jpg" style="width:100%">
+ </div>
+ </div>
+ <br>
+
+ <div style="text-align:center">
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+ </div>
+
+ <script src="jade.js">
+
+</script>
 
  <footer><h6> Email:
  <a href = "mailto:reservations@jade.com">reservations@jade.com</a></h6>
  <h6 style = "margin-top: -15px;">Phone:
  <a href ="tel:+971-4-592-4422">+971 4 592 4422</a>
  </h6>
- <h6 style ="position:relative; left:1152px; top:-45px;">Timings:
+ <h6 style ="position:relative; left:1152px; top:-55px;">Timings:
  </h6>
- <h6 style ="position:relative; left:1152px; top:-55px;">12:00 PM - 1:00 AM
+ <h6 style ="position:relative; left:1152px; top:-70px;">12:00 PM - 1:00 AM
  </h6>
 
  </footer>
