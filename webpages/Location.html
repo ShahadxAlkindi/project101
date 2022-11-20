@@ -2,64 +2,102 @@
  <html lang="en">
 <head>
 <meta charset = "utf-8">
-<title>Location</title>
-  <style>
-  h1 { font-family:Javanese Text;
-  font-size:180%;
-  position:relative; left:10px;  }
-  figcaption{font-size:30px;}
-  hr { border: 10px solid #7c5a51 ; }
-  h3{ text-align:center;
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;}
-  h2{text-align:left;
-  position:absolute;
-  bottom:650px}
-  
-  p{font-size:170%;}
-  </style>
+<title>Book A table </title>
+<link rel="stylesheet" href="booktablecss.css">
 </head>
-<body style = "background-color:#fcddbf;">
-<h1 align="center">
-Location
-</h1>
-<hr>
+ <nav id="navigation">
+ <a href="jade.html" class="logo"><h1>Jade<span></span></h1></a>
+  <ul class="links">
+    <li class="dropdown"><a href="#" class="trigger-drop">Menu<i class="arrow"></i></a>
+      <ul class="drop">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="booktable.html">Book A Table</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="private_dining.html">Private Dining</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="catering.html">Catering</a></li>
+      </ul>
+    </li>
+    </ul>
 
+</nav>
+<body style = "background-color:#fcddbf;">
+<br>
+<br>
+<hr>
+<h2 align="center">
+Book A Table
+</h2>
+
+<form method ="post" action="https://github.com/ShahadxAlkindi/project101">
+
+ <img style="float:right;" width="200" alt="table.1" src="https://i.postimg.cc/nhkLLtbT/table-1.jpg"/>
 <p>
-Find us here :
-<br>
-Dubai, Jumeirah, Souk Madinta
-<br>
-Ground Level, Shop 150
+<label>Name:<br>
+<input type = "text" id = "First name" placeholder ="First name" size=15 required /></label>
+<label><input type = "text" id = "Last name" placeholder ="Last name" size=15 required/></label>
 </p>
 
-<figure>
-<a href="shorturl.at/kvRV0">
- <img src="https://i.postimg.cc/Rhx35pR5/Map.png" alt="map" style width="500px" />
- </a>
- <figcaption>Click the map for direction</figcaption>
-</figure>
+<p>
+<label>Mobile phone number: <br>
+<input type = "tel" id="phone" placeholder="(###)-###-####" pattern="[0-9]{10}"  size=36 required /></label>
+</p>
 
-<div>
- <img style="float:right; margin-top:-350px; margin-left:350px;" width="290px" alt="res.1" src="https://i.postimg.cc/KYLxSGsj/res-1.jpg"/>
-</div>
+<p>
+<label>E-mail:<br>
+<input type="email" placeholder="Jade@example.com" size=36 required /></label>
+</p>
 
-<div>
+ <img style="float:right;" width="200" alt="table.2" src="https://i.postimg.cc/k48DN1hp/table-2.jpg"/>
 
- <img style="float:right; margin-top:-100px; margin-left:350px;" width="290px" alt="res.2" src="https://i.postimg.cc/8C8gH8PS/res-2.jpg"/>
- </div>
 
-<div>
-  <img style="float:right; margin-top:200px; margin-right:-640px;" width="290px" alt="res.3" src="https://i.postimg.cc/mkp01J6K/res-3.jpg"/>
-  </div>
+<p>
+<label>Reservation Date:<br>
+<input type="date"  required /></label>
+</p>
+
+<p>
+<label>Time:<br>
+<input type="time" required /></label>
+From 12:00 PM To 1:00 AM
+</p>
+
+
+<p>
+<label>Indoor/outdoor Table:
+<br>
+  <select name = "Table"  required>
+    <option selected>----</option>
+  <option>indoor</option>
+  <option>outdoor</option>
+  </select>
+</label>
+</p>
+   <img style="float:right;" width="200" alt="table.3" src="https://i.postimg.cc/3w1t81Zz/table-3.jpg"/>
+
+
+<p>
+<label>Notes: <br>
+<textarea name="note" rows="6" cols="36"> Any special request or comments</textarea>
+</label>
+</p>
+
+<p>
+<input type="submit" value = "Book "/>
+<input type="reset" value = "Clear "/>
+</p>
 
 
 <h3>
-If you need any help call us:<br>
- +971 4 592 4424
+For More informaiton contact us
+<br>
+Call : +971 4 592 4422 &emsp; Email : Reservation@jade.com
 </h3>
 
+</form>
 </body>
 </html>
