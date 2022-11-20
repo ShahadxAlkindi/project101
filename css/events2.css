@@ -1,0 +1,25 @@
+body {
+  margin: 20px;
+}
+    body {
+  margin: 20px;
+   background-color:#fcddbf
+}
+
+.box {
+  width: ;
+  height: 20px;
+  background-color: #7c5a51;
+  border-radius: 0%;
+  float: center;
+}
+.box1 {
+  width: 60px;
+  height: 30px;
+  background-color: #e4b098;
+  border-radius: 0%;
+  float: left;
+}      
+p1 {
+  float: left;
+}
