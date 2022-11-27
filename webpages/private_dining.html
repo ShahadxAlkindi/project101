@@ -1,31 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>private dining</title>
+    <link rel="stylesheet" type="text/css" href="final/nav.css">
+    <script src="js/booking.js"></script>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #fcddbf;
+        }
+        
+        p.border {
+            border-style: solid;
+            border-color: #7c5a51;
+            padding: 20px;
+        }
+        
+        img {
+            width: 50%;
+            position: relative;
+            left: 45%;
+            top: 50px;
+        }
+        
+        h1 {
+            color: rgb(163, 141, 114);
+        }
+    </style>
 </head>
 
 <body>
-    <img src="C://Users//a710//Desktop//phase2//image//privatetable.png" alt="table">
-    
-    <h4>book your private dining with us</h4>
+   <nav id="navigation">
+  <a href="jade.html" class="logo"><h1>Jade</h1></a>
+  <ul class="links">
+    <li class="dropdown"><a href="#" class="trigger-drop">Menu<i class="arrow"></i></a>
+      <ul class="drop">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="webpages/BookTable.html">Book A Table</a></li>
+        <li><a href="webpages/Location.html">Location</a></li>
+        <li><a href="webpages/contact_us.html">Contact Us</a></li>
+        <li><a href="webpages/gallery.html">Gallery</a></li>
+        <li><a href="webpages/private_dining.html">Private Dining</a></li>
+        <li><a href="webpages/events2.html">Events</a></li>
+        <li><a href="webpages/review.html">Reviews</a></li>
+        <li><a href="webpages/newsletter.html">Newsletter</a></li>
+        <li><a href="webpages/Jade_catering.html">Catering</a></li> 
+	<li><a href="credits.html">Credits</a></li>
+      </ul>
+    </li>
+   </ul>
+</nav>
 
-    <p>
-        I am:<br>
-        <input type ="checkbox" name="people" value="Mr.">
-        <label>Mr.</label> 
+    <br>
+    <p class="border" style="fill:#7c5a51; background-color: #7c5a51;"></p>
+    <br>
 
-        <input type ="checkbox" name="people" value="Mrs.">
-        <label>Mrs.</label>
+    <img src="image/privatetable.jpeg" alt="table">
+    <div style="position: relative; left:50px; top:-450px">
+        <div style=" background-color: #e4b098; width: 35%; position: relative;
+        left: 3%;
+        top: 100px;">
+            <p style="color: #51413d; font-family: 'Courier New', Courier, monospace;">book your private dining with us:
+                <p>
 
-        <input type ="checkbox" name="people" value="Ms.">
-        <label>Ms.</label>
-    </p>
-<p><label>Name:<br>
-<input name= "Name" type="text" size="25"></label></p>
+                    <p>
+                        I am:<br>
+                        <input type="checkbox" name="people" value="Mr.">
+                        <label>Mr.</label>
 
-<p>date & time<br>
-    <select name="Day">
+                        <input type="checkbox" name="people" value="Mrs.">
+                        <label>Mrs.</label>
+
+                        <input type="checkbox" name="people" value="Ms.">
+                        <label>Ms.</label>
+                    </p>
+                    <p><label>Name:<br>
+<input id="name" name= "Name" type="text" size="25">
+</label></p>
+
+                    <p>date & time:<br>
+                        <select id="day" name="Day">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -59,7 +121,7 @@
     
     </select>
 
-    <select name="Month">
+                        <select id="month" name="Month">
         <option>Jan</option>
         <option>Feb</option> 
         <option>Mar</option>
@@ -73,8 +135,8 @@
         <option>Nov</option>
         <option>Dec</option>
     </select>
-     
-    <select name="Year">
+
+                        <select id="year" name="Year">
         <option>2022</option>
         <option>2023</option>
         <option>2024</option>
@@ -82,7 +144,7 @@
         <option>2026</option>
     </select>
 
-    <select name="Time">
+                        <select id="time" name="Time">
         <option>12:00PM - 1:00PM</option>
         <option>1:00PM - 2:00PM</option>
         <option>2:00PM - 3:00PM</option>
@@ -94,19 +156,25 @@
         <option>8:00PM - 9:00PM</option>
     
     </select>
-</p>
+                    </p>
 
-<p><label>E-mail:<br>
-    <input name= "Name" type="text" size="25"></label></p>
+                    <p><label>E-mail:<br>
+    <input id="email" name= "Name" type="text" size="25"></label></p>
 
-<p><label>Contact Number:<br>
-    <input name= "Name" type="text" size="25"></label></p>
+                    <p><label>Contact Number:<br>
+    <input id="phone" name= "Name" type="text" size="25"></label></p>
 
-<p><label>special requests:<br>
-     <input name= "Name" type="text" size="25"></label></p>
+                    <p><label>special requests:<br>
+     <input id="requests" name= "Name" type="text" size="25"></label></p>
 
-<p>
-    <input type="submit" value = "Book">
-</p>
+                    <p>
+                        <input id="book" type="submit" value="Book">
+                    </p>
+                    <p id="bookText" style="text-align: center;"></p>
+
+        </div>
+    </div>
+
 </body>
+
 </html>
