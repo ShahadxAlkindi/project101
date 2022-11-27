@@ -1,0 +1,115 @@
+/* Project Stage Number 3 | Mohamed Rashid Saeed Rashid Alzaabi | U20201510 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Baskerville-Old-Face;;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #FFC5A3;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+body {
+  background-color: #FFFDD0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav {
+  background-color: #FFFDD0;
+  overflow: hidden;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 15px;
+  /* if you want it vertically middle of the navbar. */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  height: 80px;
+  /* if you want it to take the full height of the bar */
+  line-height: 80px;
+  font-family: Comic Sans MS;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #b3836c;
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.aligned {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  padding: 10px;
+}
+
+.aligned2 {
+  display: flex;
+  align-items: center;
+}
